@@ -170,35 +170,53 @@ p {
 	font-family: "Monument Extended";
 
     }
-    
+/* Existing CSS above remains unchanged */
 
+/* Responsive tweaks for mobile devices */
 @media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    height: auto;
-    padding: 1em 0;
+  .menu-left, .menu-right {
+    margin: 0 1em;
+    text-align: center;
+  }
+
+  .menu-item {
+    flex: 100%;
+    text-align: center;
+    margin-bottom: 0.5em;
+  }
+
+  .wrapper-img {
+    width: 90%;
+    height: 60vh;
+  }
+
+  .img {
+    width: 45vw;
+    height: 60vw;
+  }
+
+  .title {
+    font-size: 8vw;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    position: absolute;
+  }
+
+  .images {
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
+    top: 70%;
   }
 
-  .menu-left, .menu-center, .menu-right {
-    margin: 0.5em 0;
-    text-align: center;
-    flex: none;
-    width: 100%;
+  .hero-image {
+    height: auto;
+    padding-top: 2em;
   }
 
-  .hero, .section {
-    flex-direction: column !important;
-    text-align: center;
-    padding: 1em;
-  }
-
-  .hero img, .section img {
-    width: 100% !important;
-    height: auto !important;
-  }
-
-  h1, h2, h3, p {
-    font-size: 90%;
+  .box {
+    height: 60vh;
   }
 }
